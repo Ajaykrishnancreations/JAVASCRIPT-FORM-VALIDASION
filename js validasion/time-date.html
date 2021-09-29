@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+    function showdate(){
+        var t=document.getElementById("time").innerHTML=Date();
+        setTimeout(showdate,1000);
+    }
+</script>
+</head>
+<body onload="showdate()">
+    <h1>Time is:<span id="time"></span></h1>
+</body>
+</html>

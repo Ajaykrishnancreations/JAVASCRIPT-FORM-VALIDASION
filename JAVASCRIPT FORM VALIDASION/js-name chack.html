@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function go()
+        {
+            let n=document.getElementById("name").value;
+            let len=name.length;
+            var i;
+            var test=true;
+            var sppos=len-2;
+            if(len>=5)
+            {
+                for(i=0;i<len;i++)
+                {
+                    if(i==sppos)
+                    {
+                        continue;
+                    }
+                    else
+                    test=false;
+                    break;
+                    if(test==false)
+                    {
+                        alert("type letter")
+                    }
+                    else
+                    {
+                        alert("fail")
+                    }
+                }
+            }
+        }
+            
+    </script>
+</head>
+<body>
+    Enter name:<input type="text" id="name" onblur="go()">
+    <br>
+    <input type="button" value="submit">
+</body>
+</html>
